@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
   res.send("Nope brother here you can not find anything... HaHahaha");
 });
 
-app.post("/send", (req, res) => {
+app.get("/send", (req, res) => {
   console.log(req.query);
   let obj = req.query;
   client.messages
